@@ -27,9 +27,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String user = username.getText().toString();
-//                Intent optionPage = new Intent(MainActivity.this, OptionsActivity.class);
-//                optionPage.putExtra("user", user);
-//                startActivity(optionPage);
+                String pass = password.getText().toString();
+                Intent optionPage = new Intent(MainActivity.this, OptionsActivity.class);
+                optionPage.putExtra("user", user);
+                optionPage.putExtra("pass", pass);
+                startActivity(optionPage);
             }
         });
     }
