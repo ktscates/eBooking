@@ -17,6 +17,126 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/nights_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotel_text_view"
+        android:layout_margin="20dp"
+        android:text="Number of nights"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nights_text_view"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="decrementNight"
+            android:text="-"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/numberOfnights_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="0"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="incrementNight"
+            android:text="+"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rooms_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_margin="20dp"
+        android:text="Number of Rooms"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rooms_text_view"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="decrementRoom"
+            android:text="-"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/numberOfRooms_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="0"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="incrementRoom"
+            android:text="+"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:text="Price"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/price"
+        android:text="$0"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
