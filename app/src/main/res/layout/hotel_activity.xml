@@ -45,7 +45,7 @@
             android:textSize="30sp" />
 
         <TextView
-            android:id="@+id/numberOfnights_text_view"
+            android:id="@+id/numberOfNights_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -114,25 +114,74 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/nightPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="100dp"
-        android:text="Price"
+        android:text="Night Price"
         android:textColor="@color/colorTextIcons"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/price_text_view"
+        android:id="@+id/roomPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nightPrice"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:text="Room Price"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nightPrice_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/price"
+        android:layout_toRightOf="@id/nightPrice"
+        android:text="$0"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/roomPrice_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nightPrice"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/roomPrice"
+        android:text="$0"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomPrice"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:text="Total Price"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/totalPrice_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomPrice"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/totalPrice"
         android:text="$0"
         android:textColor="@color/colorTextIcons"
         android:textSize="20sp" />
