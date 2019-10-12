@@ -14,8 +14,8 @@
         android:layout_marginTop="30dp"
         android:text="Book a bus ticket"
         android:textColor="@color/colorTextIcons"
-        android:textStyle="bold"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/from_edit_view"
@@ -59,14 +59,14 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:onClick="decrement"
-            android:textColor="@color/colorTextIcons"
             android:background="@color/colorAccent"
+            android:onClick="decrement"
             android:text="-"
+            android:textColor="@color/colorTextIcons"
             android:textSize="30sp" />
 
         <TextView
-            android:id="@+id/number_text_view"
+            android:id="@+id/numberOfTickets_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -100,7 +100,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/prices_text_view"
+        android:id="@+id/price_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout"
@@ -119,8 +119,8 @@
         android:background="@color/colorAccent"
         android:onClick="book"
         android:text="Book"
+        android:textColor="@color/colorTextIcons"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorTextIcons" />
+        android:textStyle="bold" />
 
 </RelativeLayout>
