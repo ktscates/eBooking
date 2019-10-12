@@ -10,51 +10,55 @@
         android:id="@+id/option_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:text="Choose an Option" />
+        android:text="Choose an Option"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/bus_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Bus Ticket Reservation"
-        android:onClick="busButton"/>
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:onClick="busButton"
+        android:text="Bus Ticket Reservation" />
 
     <Button
         android:id="@+id/hotel_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:onClick="hotelButton"
         android:text="Hotel Reservation" />
 
     <Button
         android:id="@+id/resto_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_weight="1"
+        android:onClick="restoButton"
         android:text="Restaurant Reservation" />
 
     <Button
         android:id="@+id/event_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:onClick="eventButton"
         android:text="Event Reservation" />
 
 </LinearLayout>

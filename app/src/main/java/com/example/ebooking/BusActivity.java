@@ -1,7 +1,6 @@
 package com.example.ebooking;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BusActivity extends AppCompatActivity {
