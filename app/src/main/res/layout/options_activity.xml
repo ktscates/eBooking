@@ -24,7 +24,8 @@
         android:layout_weight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Bus Ticket Reservation" />
+        android:text="Bus Ticket Reservation"
+        android:onClick="busButton"/>
 
     <Button
         android:id="@+id/hotel_button"
