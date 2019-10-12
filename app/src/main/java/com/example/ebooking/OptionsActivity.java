@@ -11,7 +11,6 @@ public class OptionsActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.options_activity);
-
     }
 
     public void busButton(View view){

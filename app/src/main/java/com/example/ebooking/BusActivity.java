@@ -47,8 +47,8 @@ public class BusActivity extends AppCompatActivity {
         return price;
     }
 
-    public void book(View view) {
-        String message = "Your Reservation have been saved\nThe total price is: " + price + " for " + numberOfTickets + " tickets";
+    public void bookBus(View view) {
+        String message = "Your Reservation have been saved\nThe total price is: " + price + " for " + numberOfTickets + " tickets\n";
         Toast.makeText(BusActivity.this, message, Toast.LENGTH_LONG).show();
     }
 }
