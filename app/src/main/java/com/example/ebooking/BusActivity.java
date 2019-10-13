@@ -25,7 +25,7 @@ public class BusActivity extends AppCompatActivity {
         numberOfTicketsTextView.setText("" + number);
     }
 
-    //Display the price each time the number of tickets is changed
+    //Display the price each time the number of tickets are changed
     private void displayPrice(int price) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText("$" + price);

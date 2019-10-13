@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Declare variables
     private EditText username;
     private EditText password;
     private Button login;
@@ -19,10 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Assign variables
         username = (EditText) findViewById(R.id.user_edit_text);
         password = (EditText) findViewById(R.id.pass_edit_text);
         login = (Button) findViewById(R.id.login_button);
 
+        //When the login button is clicked, it takes you to another page
         login.setOnClickListener(new View.OnClickListener() {
 
             @Override

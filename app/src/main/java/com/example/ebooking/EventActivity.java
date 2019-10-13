@@ -25,7 +25,7 @@ public class EventActivity extends AppCompatActivity {
         numberOfSeatsTextView.setText("" + seatNumber);
     }
 
-    //Display the price each time the number of seats is changed
+    //Display the price each time the number of seats are changed
     private void displayPriceEvent(int eventPrice) {
         TextView priceTextView = (TextView) findViewById(R.id.priceEvent_text_view);
         priceTextView.setText("$" + eventPrice);
