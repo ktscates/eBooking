@@ -47,7 +47,7 @@
             android:textSize="30sp" />
 
         <TextView
-            android:id="@+id/numberOfTickets_text_view"
+            android:id="@+id/numberOfSeats_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
