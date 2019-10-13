@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryText"
+    tools:context="com.example.ebooking.EventActivity">
+
+    <TextView
+        android:id="@+id/event_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Book a seat at an event"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/lobster" />
+
+    <TextView
+        android:id="@+id/seats_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_text_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Number of seats"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seats_text_view"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="decrementSeat"
+            android:text="-"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/numberOfSeats_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="0"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="25sp"
+            app:fontFamily="@font/lobster" />
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="incrementSeat"
+            android:text="+"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/priceEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:text="Price"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
+
+    <TextView
+        android:id="@+id/priceEvent_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/priceEvent"
+        android:text="$0"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:onClick="bookEvent"
+        android:text="Book a seat"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

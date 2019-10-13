@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryText"
+    tools:context="com.example.ebooking.BusActivity">
+
+    <TextView
+        android:id="@+id/bus_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Book a bus ticket"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/lobster" />
+
+    <EditText
+        android:id="@+id/from_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bus_text_view"
+        android:layout_margin="20dp"
+        android:hint="From"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/destination_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from_edit_view"
+        android:layout_margin="20dp"
+        android:hint="Destination"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tickets_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destination_edit_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Number of tickets"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tickets_text_view"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="decrement"
+            android:text="-"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/numberOfTickets_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="0"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="25sp"
+            app:fontFamily="@font/lobster" />
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="increment"
+            android:text="+"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:text="Price"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/price"
+        android:text="$0"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:onClick="bookBus"
+        android:text="Book Ticket"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
