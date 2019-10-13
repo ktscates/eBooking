@@ -10,6 +10,7 @@ eBooking app facilitate users to book bus tickets, hotel rooms, table reservatio
 * Click on the green button labeled: clone or download. you can clone or download it directly into your computer.
 * Unzip the folder.
 * You should have all the project files.
+![ScreenShot](login.png)
 ## Known Bugs
 There no bugs in the application.
 ## Technologies Used
