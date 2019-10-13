@@ -21,6 +21,10 @@
         <activity android:name=".HotelActivity"/>
         <activity android:name=".RestoActivity"/>
         <activity android:name=".EventActivity"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

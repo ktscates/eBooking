@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -16,17 +17,24 @@
         android:text="Book a seat at an event"
         android:textColor="@color/colorTextIcons"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/lobster" />
 
     <TextView
         android:id="@+id/seats_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/event_text_view"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Number of seats"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -53,7 +61,8 @@
             android:layout_margin="20dp"
             android:text="0"
             android:textColor="@color/colorTextIcons"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            app:fontFamily="@font/lobster" />
 
         <Button
             android:id="@+id/plus_button"
@@ -78,7 +87,8 @@
         android:layout_marginRight="100dp"
         android:text="Price"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
 
     <TextView
         android:id="@+id/priceEvent_text_view"
@@ -90,7 +100,8 @@
         android:layout_toRightOf="@id/priceEvent"
         android:text="$0"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:textSize="25sp"
+        app:fontFamily="@font/lobster" />
 
     <Button
         android:layout_width="match_parent"
