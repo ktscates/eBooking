@@ -1,85 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryText"
-    android:orientation="vertical"
-    tools:context="com.example.ebooking.OptionsActivity">
+    tools:context=".OptionsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
 
     <TextView
-        android:id="@+id/option_text_view"
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="My Events"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/findEventsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorTextIcons"
+        android:hint="Enter Zip Code"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/findEventsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:text="Choose an Option"
-        android:textAlignment="center"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/lobster" />
-
-    <Button
-        android:id="@+id/bus_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
         android:background="@color/colorAccent"
-        android:onClick="busButton"
-        android:text="Bus Ticket Reservation"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:text="Find Events"
+        android:textColor="@color/colorTextIcons" />
 
-    <Button
-        android:id="@+id/hotel_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
-        android:background="@color/colorAccent"
-        android:onClick="hotelButton"
-        android:text="Hotel Reservation"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+</RelativeLayout>
 
-    <Button
-        android:id="@+id/resto_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
-        android:background="@color/colorAccent"
-        android:onClick="restoButton"
-        android:text="Restaurant Reservation"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/colorPrimaryText"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context="com.example.ebooking.OptionsActivity">-->
 
-    <Button
-        android:id="@+id/event_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:background="@color/colorAccent"
-        android:onClick="eventButton"
-        android:text="Event Reservation"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+<!--    <TextView-->
+<!--        android:id="@+id/option_text_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:text="Choose an Option"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:fontFamily="@font/lobster" />-->
 
-</LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/bus_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:onClick="busButton"-->
+<!--        android:text="Bus Ticket Reservation"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/hotel_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:onClick="hotelButton"-->
+<!--        android:text="Hotel Reservation"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/resto_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:onClick="restoButton"-->
+<!--        android:text="Restaurant Reservation"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/event_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:onClick="eventButton"-->
+<!--        android:text="Event Reservation"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--</LinearLayout>-->

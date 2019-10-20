@@ -2,76 +2,126 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryText"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/booking_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Welcome to eBooking"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/lobster" />
-
     <ImageView
-        android:id="@+id/login_image_view"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/user_edit_text"
-        android:layout_below="@id/booking_text_view"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/login" />
 
-    <EditText
-        android:id="@+id/user_edit_text"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="10dp"
-        android:hint="Username"
+        android:layout_marginTop="35dp"
+        android:text="My Events"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/pass_edit_text"
-        android:layout_width="match_parent"
+        android:id="@+id/locationEditText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_edit_text"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="10dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:layout_above="@id/findEventsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorTextIcons"
+        android:hint="Enter Zip Code"
+        android:padding="5dp" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/findEventsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:text="Login"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="30dp"
-        android:textStyle="bold" />
-
+        android:text="Find Events"
+        android:textColor="@color/colorTextIcons" />
 
 </RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/back"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/colorPrimaryText"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/booking_text_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:text="Welcome to eBooking"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:fontFamily="@font/lobster" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/login_image_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/user_edit_text"-->
+<!--        android:layout_below="@id/booking_text_view"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/login" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/user_edit_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:hint="Username"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/pass_edit_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/user_edit_text"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:hint="Password"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/login_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:text="Login"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold" />-->
+
+
+<!--</RelativeLayout>-->
