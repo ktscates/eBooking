@@ -18,7 +18,7 @@ eBooking app facilitate users to book bus tickets, hotel rooms, table reservatio
 ![ScreenShot](resto.png)
 ![ScreenShot](event.png)
 ## Known Bugs
-There no bugs in the application.
+The API failed to retrieve data. 
 ## Technologies Used
 * Android studio
 * Java for android
