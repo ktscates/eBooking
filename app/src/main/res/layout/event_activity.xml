@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryText"
+    android:background="@color/colorPrimaryLight"
     tools:context="com.example.ebooking.EventActivity">
 
     <TextView

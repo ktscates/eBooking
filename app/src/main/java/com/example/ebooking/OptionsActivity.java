@@ -17,25 +17,25 @@ public class OptionsActivity extends AppCompatActivity {
     }
 
     //When clicked, it will take you to the bus page
-    public void bookBus(View view){
+    public void busButton(View view){
         Intent busPage= new Intent(OptionsActivity.this, BusActivity.class);
         startActivity(busPage);
     }
 
     //When clicked, it will take you to the hotel page
-    public void bookHotel(View view){
+    public void hotelButton(View view){
         Intent hotelPage= new Intent(OptionsActivity.this, HotelActivity.class);
         startActivity(hotelPage);
     }
 
     //When clicked, it will take you to the resto page
-    public void bookResto(View view){
+    public void restoButton(View view){
         Intent restoPage= new Intent(OptionsActivity.this, RestoActivity.class);
         startActivity(restoPage);
     }
 
     //When clicked, it will take you to the event page
-    public void bookEvent(View view){
+    public void eventButton(View view){
         Intent eventPage= new Intent(OptionsActivity.this, EventActivity.class);
         startActivity(eventPage);
     }

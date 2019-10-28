@@ -3,7 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity" >
+    android:background="@color/colorPrimaryLight"
+    tools:context="com.example.ebooking.LoginActivity" >
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryLight"/>
 
     <EditText
         android:id="@+id/email"
@@ -11,7 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="Email"
+        android:layout_below="@id/login"
         android:inputType="textEmailAddress"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp" />
 
     <EditText
@@ -22,14 +46,18 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:layout_below="@id/email"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Login"
+        android:background="@color/colorAccent"
         android:layout_below="@id/password"
         android:textSize="20sp" />
 
@@ -37,9 +65,11 @@
         android:id="@+id/login_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
         android:text="Not registered? Sign Up here"
+        android:textColor="@color/colorAccent"
         android:layout_below="@id/login_button"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
 
 </RelativeLayout>

@@ -19,13 +19,10 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SignupActivity extends AppCompatActivity {
 
     private EditText email;
-    private EditText username;
     private EditText password;
-    private EditText confirm;
     private Button signUp;
     private TextView loginPage;
     private FirebaseAuth authentication;
-    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +32,7 @@ public class SignupActivity extends AppCompatActivity {
         authentication = FirebaseAuth.getInstance();
 
         email= (EditText) findViewById(R.id.email);
-        username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        confirm = (EditText) findViewById(R.id.confirm);
         signUp = (Button) findViewById(R.id.signup_button);
         loginPage = (TextView) findViewById(R.id.signup_text_view);
 

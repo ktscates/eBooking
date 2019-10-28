@@ -14,7 +14,7 @@
         <activity android:name=".SignupActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ebooking.EventActivity">
+                android:value="com.example.ebooking.SignupActivity">
             </meta-data>
         </activity>
         <activity android:name=".LoginActivity">
@@ -23,11 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BusActivity"/>
         <activity android:name=".OptionsActivity"/>
-        <activity android:name=".EventActivity"/>
         <activity android:name=".HotelActivity"/>
         <activity android:name=".RestoActivity"/>
+        <activity android:name=".EventActivity"/>
+        <activity android:name=".BusActivity"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
