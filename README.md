@@ -11,14 +11,11 @@ eBooking app facilitate users to book bus tickets, hotel rooms, table reservatio
 * Unzip the folder.
 * You should have all the project files.
 ## Screenshots
-![ScreenShot](login.png)
-![ScreenShot](main.png)
-![ScreenShot](bus.png)
-![ScreenShot](hotel.png)
-![ScreenShot](resto.png)
-![ScreenShot](event.png)
+![ScreenShot](screenshots/login.png)
+![ScreenShot](screenshots/signup.png)
+![ScreenShot](screenshots/Firebase.png)
 ## Known Bugs
-The API failed to retrieve data. 
+There are no bugs.
 ## Technologies Used
 * Android studio
 * Java for android
