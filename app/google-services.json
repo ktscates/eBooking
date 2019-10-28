@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "663789858993",
+    "firebase_url": "https://chatapp-be17c.firebaseio.com",
+    "project_id": "chatapp-be17c",
+    "storage_bucket": "chatapp-be17c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663789858993:android:ba71212fc7daebaa25b290",
+        "android_client_info": {
+          "package_name": "com.example.ebooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663789858993-qjqae7a76ss6178vmv013pak19etlj4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ebooking",
+            "certificate_hash": "8f4494377f32434f9efc1a276988e419427cadce"
+          }
+        },
+        {
+          "client_id": "663789858993-5vci346tqmn3m4jvs5irp2eo93i4gbul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ebooking",
+            "certificate_hash": "dba6246ea5f9e8298f3221dd9a42052b3618d055"
+          }
+        },
+        {
+          "client_id": "663789858993-0bkf694avbkcc11r9sf37dt96g3ecqg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbsuAXaOgdn88S4Sf_BRqlLtGsajWYSsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663789858993-0bkf694avbkcc11r9sf37dt96g3ecqg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
