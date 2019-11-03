@@ -12,10 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="Book a hotel room"
         android:textColor="@color/colorTextIcons"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:fontFamily="@font/lobster" />
 
@@ -29,10 +29,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:text="Number of nights"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <LinearLayout
@@ -45,32 +45,32 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="decrementNight"
             android:text="-"
             android:textColor="@color/colorTextIcons"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/numberOfNights_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:text="0"
             android:textColor="@color/colorTextIcons"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:fontFamily="@font/lobster" />
 
         <Button
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="incrementNight"
             android:text="+"
             android:textColor="@color/colorTextIcons"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -81,13 +81,13 @@
         android:layout_below="@id/linearLayout"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:text="Number of Rooms"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <LinearLayout
@@ -100,32 +100,32 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="decrementRoom"
             android:text="-"
             android:textColor="@color/colorTextIcons"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/numberOfRooms_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:text="0"
             android:textColor="@color/colorTextIcons"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:fontFamily="@font/lobster" />
 
         <Button
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="incrementRoom"
             android:text="+"
             android:textColor="@color/colorTextIcons"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -135,11 +135,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="100dp"
         android:text="Night Price"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <TextView
@@ -148,11 +148,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nightPrice"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="100dp"
         android:text="Room Price"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <TextView
@@ -161,11 +161,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/nightPrice"
         android:text="$0"
+        android:fontFamily="@font/lobster"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
 
     <TextView
@@ -174,11 +175,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nightPrice"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/roomPrice"
         android:text="$0"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <TextView
@@ -187,11 +188,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/roomPrice"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="100dp"
         android:text="Total Price"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <TextView
@@ -200,23 +201,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/roomPrice"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/totalPrice"
         android:text="$0"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="@font/lobster" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
         android:onClick="bookHotel"
         android:text="Book a room"
+        android:padding="10dp"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
