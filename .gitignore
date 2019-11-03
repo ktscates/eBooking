@@ -11,5 +11,9 @@
 /build
 /captures
 /gradle.properties
+.build.gradle
+.gradle
+.gradle.bat
+.settings.gradle
 .externalNativeBuild
 .cxx
