@@ -13,8 +13,8 @@ eBooking app facilitate users to book bus tickets, hotel rooms, table reservatio
 * You should have all the project files.
 * Open the folder with android studio.
 ## Screenshots
-![ScreenShot](/screenshots/login.png)
-![ScreenShot](/screenshots/main.png)
+![ScreenShot](screenshots/login.png)
+![ScreenShot](screenshots/main.png)
 ## Known Bugs
 There are no bugs or errors.
 ## Technologies Used
