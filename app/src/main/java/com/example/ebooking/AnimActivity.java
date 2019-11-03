@@ -8,19 +8,20 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class AnimActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.anim_activity);
 
         ImageView image = (ImageView)findViewById(R.id.imageView);
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
         image.startAnimation(animation);
 
-        TextView textview = (TextView)findViewById(R.id.welcome);
-        Animation textAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
-        textview.startAnimation(textAnim);
+        TextView text = (TextView)findViewById(R.id.log);
+        Animation animatext = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        text.startAnimation(animatext);
 
         animation.setAnimationListener(new Animation.AnimationListener() {
 
@@ -34,23 +35,23 @@ public class MainActivity extends Activity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                startActivity(new Intent(AnimActivity.this, OptionActivity.class));
             }
         });
 
-        textAnim.setAnimationListener(new Animation.AnimationListener() {
+        animatext.setAnimationListener(new Animation.AnimationListener() {
 
             @Override
-            public void onAnimationStart(Animation textAnim) {
+            public void onAnimationStart(Animation animatext) {
             }
 
             @Override
-            public void onAnimationRepeat(Animation textAnim) {
+            public void onAnimationRepeat(Animation animatext) {
             }
 
             @Override
-            public void onAnimationEnd(Animation textAnim) {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            public void onAnimationEnd(Animation animattext) {
+                startActivity(new Intent(AnimActivity.this, OptionActivity.class));
             }
         });
     }
