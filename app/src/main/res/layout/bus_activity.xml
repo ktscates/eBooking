@@ -26,9 +26,9 @@
         android:layout_below="@id/bus_text_view"
         android:layout_margin="20dp"
         android:hint="From"
-        app:fontFamily="@font/lobster"
         android:textColor="@color/colorTextIcons"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        app:fontFamily="@font/lobster" />
 
     <EditText
         android:id="@+id/destination_edit_view"
@@ -37,9 +37,9 @@
         android:layout_below="@id/from_edit_view"
         android:layout_margin="20dp"
         android:hint="Destination"
-        app:fontFamily="@font/lobster"
         android:textColor="@color/colorTextIcons"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        app:fontFamily="@font/lobster" />
 
     <TextView
         android:id="@+id/tickets_text_view"
@@ -132,8 +132,8 @@
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
         android:onClick="bookBus"
-        android:text="Book Ticket"
         android:padding="10dp"
+        android:text="Book Ticket"
         android:textColor="@color/colorTextIcons"
         android:textSize="15sp"
         android:textStyle="bold" />

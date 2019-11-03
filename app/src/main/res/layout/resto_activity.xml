@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/lobster"
         android:text="Book a Table at a restaurant"
         android:textColor="@color/colorTextIcons"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/lobster" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/table_text_view"
@@ -29,10 +29,10 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
+        android:fontFamily="@font/lobster"
         android:text="Table of"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp"
-        android:fontFamily="@font/lobster" />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -57,10 +57,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:fontFamily="@font/lobster"
             android:text="0"
             android:textColor="@color/colorTextIcons"
-            android:textSize="20sp"
-            android:fontFamily="@font/lobster" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/plus_button"
@@ -83,10 +83,10 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="100dp"
+        android:fontFamily="@font/lobster"
         android:text="Price"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp"
-        android:fontFamily="@font/lobster" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/priceTable_text_view"
@@ -96,10 +96,10 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/price"
+        android:fontFamily="@font/lobster"
         android:text="$0"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp"
-        android:fontFamily="@font/lobster" />
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -107,9 +107,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:padding="10dp"
         android:background="@color/colorAccent"
         android:onClick="bookResto"
+        android:padding="10dp"
         android:text="Book a table"
         android:textColor="@color/colorTextIcons"
         android:textSize="15sp"

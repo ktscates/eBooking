@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
     tools:context="com.example.ebooking.EventActivity">
 
     <TextView
@@ -111,8 +111,8 @@
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
         android:onClick="bookEvent"
-        android:text="Book a seat"
         android:padding="10dp"
+        android:text="Book a seat"
         android:textColor="@color/colorTextIcons"
         android:textSize="15sp"
         android:textStyle="bold" />
