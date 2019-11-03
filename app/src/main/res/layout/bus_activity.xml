@@ -15,7 +15,7 @@
         android:layout_marginTop="30dp"
         android:text="Book a bus ticket"
         android:textColor="@color/colorTextIcons"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:fontFamily="@font/lobster" />
 
@@ -27,7 +27,7 @@
         android:layout_margin="20dp"
         android:hint="From"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/destination_edit_view"
@@ -37,7 +37,7 @@
         android:layout_margin="20dp"
         android:hint="Destination"
         android:textColor="@color/colorTextIcons"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/tickets_text_view"
@@ -52,7 +52,7 @@
         android:layout_marginBottom="20dp"
         android:text="Number of tickets"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:fontFamily="@font/lobster" />
 
     <LinearLayout
@@ -66,33 +66,33 @@
             android:id="@+id/minus_button"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="decrement"
             android:text="-"
             android:textColor="@color/colorTextIcons"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/numberOfTickets_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:text="0"
             android:textColor="@color/colorTextIcons"
-            android:textSize="25sp"
+            android:textSize="20sp"
             app:fontFamily="@font/lobster" />
 
         <Button
             android:id="@+id/plus_button"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="increment"
             android:text="+"
             android:textColor="@color/colorTextIcons"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -106,7 +106,7 @@
         android:layout_marginRight="100dp"
         android:text="Price"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:fontFamily="@font/lobster" />
 
     <TextView
@@ -119,19 +119,20 @@
         android:layout_toRightOf="@id/price"
         android:text="$0"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:fontFamily="@font/lobster" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
         android:onClick="bookBus"
         android:text="Book Ticket"
         android:textColor="@color/colorTextIcons"
-        android:textSize="25sp"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
