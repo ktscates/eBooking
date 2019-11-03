@@ -26,6 +26,7 @@
         android:layout_below="@id/bus_text_view"
         android:layout_margin="20dp"
         android:hint="From"
+        app:fontFamily="@font/lobster"
         android:textColor="@color/colorTextIcons"
         android:textSize="15sp" />
 
@@ -36,6 +37,7 @@
         android:layout_below="@id/from_edit_view"
         android:layout_margin="20dp"
         android:hint="Destination"
+        app:fontFamily="@font/lobster"
         android:textColor="@color/colorTextIcons"
         android:textSize="15sp" />
 
